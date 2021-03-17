@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TP2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_map">Map</string>
+    <string name="menu_apropos">A Propos</string>
+    <string name="menu_list">Liste</string>
+    <string name="phares">Phares</string>
+    <string name="a_lighthouse_drawing">a lighthouse drawing</string>
+    <string name="apropos">A propos</string>
+    <string name="nom">Châteaux</string>
+    <string name="prenom">Adrien</string>
+    <string name="email_adrien">adrien.chateaux@hotmail.com</string>
+    <string name="List">Liste</string>
+    <string name="hauteur">Hauteur:</string>
+    <string name="nombre_d_clats_du_phare">Nombre d\'éclats du phare:</string>
+    <string name="p_riode">Période:</string>
+    <string name="ann_e_d_automatisation_du_phare">Année d\'automatisation du phare:</string>
+    <string name="port_e_du_phare">Portée du phare:</string>
+    <string name="image_du_phare">image du phare</string>
+</resources>

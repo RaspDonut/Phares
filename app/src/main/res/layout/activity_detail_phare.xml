@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailPhareActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.20109439"
+        app:layout_constraintTop_toBottomOf="@+id/nom_phare" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nom_phare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_phare"
+        tools:text="nom du phare" />
+
+    <TextView
+        android:id="@+id/hauteur_phare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/periode_phare"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        tools:text="hauteur du phare" />
+
+    <TextView
+        android:id="@+id/nb_eclat_phare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/automatisation_phare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        tools:text="Nombre eclats du phare" />
+
+    <TextView
+        android:id="@+id/portee_phare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.80"
+        tools:text="Portee du phare" />
+
+    <TextView
+        android:id="@+id/periode_phare"
+        android:layout_width="110dp"
+        android:layout_height="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        tools:text="période du phare" />
+
+    <TextView
+        android:id="@+id/automatisation_phare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        tools:text="automatisation du phare" />
+
+    <TextView
+        android:id="@+id/id_phare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/nom_phare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="id du phare" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/hauteur_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hauteur"
+        app:layout_constraintBottom_toTopOf="@+id/hauteur_phare"
+        app:layout_constraintEnd_toEndOf="@+id/hauteur_phare"
+        app:layout_constraintStart_toStartOf="@+id/hauteur_phare" />
+
+    <TextView
+        android:id="@+id/nbEclats_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_d_clats_du_phare"
+        app:layout_constraintBottom_toTopOf="@+id/nb_eclat_phare"
+        app:layout_constraintEnd_toEndOf="@+id/nb_eclat_phare"
+        app:layout_constraintStart_toStartOf="@+id/guideline9" />
+
+    <TextView
+        android:id="@+id/periode_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/p_riode"
+        app:layout_constraintBottom_toTopOf="@+id/periode_phare"
+        app:layout_constraintEnd_toEndOf="@+id/periode_phare"
+        app:layout_constraintStart_toStartOf="@+id/periode_phare" />
+
+    <TextView
+        android:id="@+id/automatisation_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ann_e_d_automatisation_du_phare"
+        app:layout_constraintBottom_toTopOf="@+id/automatisation_phare"
+        app:layout_constraintEnd_toEndOf="@+id/automatisation_phare"
+        app:layout_constraintStart_toStartOf="@+id/automatisation_phare" />
+
+    <TextView
+        android:id="@+id/portee_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/port_e_du_phare"
+        app:layout_constraintBottom_toTopOf="@+id/portee_phare"
+        app:layout_constraintEnd_toEndOf="@+id/portee_phare"
+        app:layout_constraintStart_toStartOf="@+id/portee_phare" />
+
+    <ImageView
+        android:id="@+id/img_phare"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="@string/image_du_phare"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
